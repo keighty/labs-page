@@ -22,8 +22,6 @@ function deploy_s3() {
 
 action=${1:-"help"}
 
-cd $root_dir
-
 case "$action" in
   deploy)
     deploy_s3 ${2}
