@@ -18,3 +18,22 @@
 ### View the site
 
 Go to http://bucket.name.s3-website-us-east-1.amazonaws.com .
+
+### Example
+
+```bash
+$ scaffold ./manage.sh create static.scaffold
+make_bucket: s3://static.scaffold/
+Website endpoint is: http://static.scaffold.s3-website-us-east-1.amazonaws.com
+$ scaffold ./manage.sh deploy static.scaffold
+s3://static.scaffold
+upload: Documents/projects/scaffold/public/stylesheets/index.css to s3://static.scaffold/stylesheets/index.css
+upload: Documents/projects/scaffold/public/app.js to s3://static.scaffold/app.js
+upload: Documents/projects/scaffold/public/index.html to s3://static.scaffold/index.html
+upload: Documents/projects/scaffold/public/favicon.ico to s3://static.scaffold/favicon.ico
+upload: Documents/projects/scaffold/public/images/HeroImage.jpg to s3://static.scaffold/images/HeroImage.jpg
+upload: Documents/projects/scaffold/public/vendor.js to s3://static.scaffold/vendor.js
+View the site at http://static.scaffold.s3-website-us-east-1.amazonaws.com
+```
+
+[http://static.scaffold.s3-website-us-east-1.amazonaws.com/](http://static.scaffold.s3-website-us-east-1.amazonaws.com/)
